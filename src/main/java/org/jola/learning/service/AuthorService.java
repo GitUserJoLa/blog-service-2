@@ -1,6 +1,6 @@
 package org.jola.learning.service;
 
-import org.jola.learning.dto.AuthorDto;
+import org.jola.learning.model.Author;
 import org.springframework.stereotype.Service;
 
 import java.util.List;
@@ -8,7 +8,7 @@ import java.util.List;
 @Service
 public class AuthorService {
 
-    public List<AuthorDto> getAuthors(String lastName, String firstName) {
+    public List<Author> getAuthors(String lastName, String firstName) {
         return null;
     }
 }
