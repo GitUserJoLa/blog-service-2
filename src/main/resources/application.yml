@@ -1,0 +1,12 @@
+spring:
+  application:
+    name: blog-service
+  datasource:
+    url: jdbc:postgresql://localhost:5432/blogservice
+    username: josephinelanger
+    password: test
+    driver-class-name: org.postgresql.Driver
+
+
+flyway:
+  locations: classpath:db/migration

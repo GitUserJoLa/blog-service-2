@@ -1,7 +1,9 @@
+
 plugins {
     id("java")
     id("org.springframework.boot") version "3.3.2"
     id("io.spring.dependency-management") version "1.1.6"
+    id("org.flywaydb.flyway") version "10.16.0"
 }
 
 group = "org.jola.learning"
@@ -9,6 +11,13 @@ version = "1.0-SNAPSHOT"
 
 repositories {
     mavenCentral()
+}
+
+buildscript {
+    dependencies {
+        classpath("org.postgresql:postgresql:42.7.3")
+        classpath("org.flywaydb:flyway-database-postgresql:10.16.0")
+    }
 }
 
 dependencies {
@@ -33,6 +42,7 @@ dependencies {
 
     // https://mvnrepository.com/artifact/org.flywaydb/flyway-core
     implementation("org.flywaydb:flyway-core:10.16.0")
+    implementation("org.flywaydb:flyway-database-postgresql:10.16.0")
 
 //    // https://mvnrepository.com/artifact/org.jooq/jooq
 //    implementation("org.jooq:jooq:3.19.10")
