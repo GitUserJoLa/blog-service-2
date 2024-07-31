@@ -34,8 +34,8 @@ dependencies {
     // https://mvnrepository.com/artifact/org.flywaydb/flyway-core
     implementation("org.flywaydb:flyway-core:10.16.0")
 
-    // https://mvnrepository.com/artifact/org.jooq/jooq
-    implementation("org.jooq:jooq:3.19.10")
+//    // https://mvnrepository.com/artifact/org.jooq/jooq
+//    implementation("org.jooq:jooq:3.19.10")
 
 
 
@@ -50,7 +50,7 @@ dependencies {
 //    testImplementation("org.springframework.boot:spring-boot-starter-security:3.3.2")
     testImplementation("org.postgresql:postgresql:42.7.3")
     testImplementation("org.flywaydb:flyway-core:10.16.0")
-    testImplementation("org.jooq:jooq:3.19.10")
+//    testImplementation("org.jooq:jooq:3.19.10")
 }
 
 tasks.test {
