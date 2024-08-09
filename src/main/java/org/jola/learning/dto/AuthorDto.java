@@ -16,30 +16,31 @@ import org.springframework.stereotype.Component;
 public class AuthorDto {
 
     @NotNull
+    // auto-generation; should be set by database only
     @Setter(AccessLevel.NONE)
-    //primary key, bigint, not null, autoincrement, autogenerate
+    // primary key, bigint, not null, autoincrement, autogenerate
     private Long id;
 
     @NotNull
-    //string, not null
+    // varchar(255), not null
     private String firstName;
 
     @NotNull
-    //string, not null
+    // varchar(255), not null
     private String lastName;
 
     @NotNull
-    //string, not null, unique
+    // varchar(255), not null, unique
     private String alias;
 
     @NotNull
     @Setter(AccessLevel.NONE)
-    //string, not null, unique
+    // varchar(255), not null, unique
     private String email;
 
     @NotNull
     @Getter(AccessLevel.NONE)
-    //hashed string, not null
+    // hashed varchar(255), not null
     // should also be stored hashed in db and never be clear text
     private String password;
 }
